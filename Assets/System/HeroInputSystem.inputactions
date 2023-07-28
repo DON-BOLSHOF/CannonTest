@@ -1,0 +1,82 @@
+{
+    "name": "HeroInputSystem",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "391c4be3-2159-4fde-ba2b-66d7c16f3742",
+            "actions": [
+                {
+                    "name": "MouseRotation",
+                    "type": "Value",
+                    "id": "ca13de6b-2109-4b74-a5f9-1df33629ad2e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftClickMouse",
+                    "type": "Button",
+                    "id": "ad20c88d-2a3f-4fb0-9cfc-8a327216907d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "06193260-a030-40d3-bfec-7cc51cb21e16",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bbccea2e-4c9b-43ec-8af0-87dbb96b1473",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftClickMouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "KeyBoard",
+            "id": "076a51bb-4379-4395-aae6-36a35d271693",
+            "actions": [
+                {
+                    "name": "Q",
+                    "type": "Button",
+                    "id": "f17f397f-3019-4ed8-8e7e-87d0455500d2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dc1f100e-065e-4d24-994d-25800128de08",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Q",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
